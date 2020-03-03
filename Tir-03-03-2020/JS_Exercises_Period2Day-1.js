@@ -84,7 +84,7 @@ console.log();
 //4b
 console.log("//4b");
 let namesMap = names.map(function(element) {
-    return "<a href=””>" + element + "</a>";
+    return "<a href=””>" + element + "</a>" + "<br>";
 }).join("");
 console.log("<nav>" + namesMap + "</nav>");
 console.log();
@@ -109,13 +109,19 @@ console.log(insertIntoTable(namesAndPhone));
 console.log();
 
 //4d
-console.log("//4d - Se HTML og indkommenter document.blablabla");
+console.log("//4d - Se HTML og indkommenter document.blablabla, hvis udkommenteret");
 document.getElementById("myDiv1").innerHTML = insertIntoTable(namesAndPhone); //Den kommer med en eller anden fejl uden grund :/
 document.getElementById("myDiv2").innerHTML = "<nav>" + namesMap + "</nav>";
 console.log();
+/*
+Fejlen kommer fordi den ikke kan se document.getBlabla, når den ikke
+køre i et browser vindue, da disse ikke er loadet.
+Dette gør sig også gældende for de næste funktioner, som gør brug af document.Blablabla
+En workaround er at kigge på konsollen i et browser vindue.
+*/
 
 //4e
-console.log("//4e - Se HTML og indkommenter document.blabla")
+console.log("//4e - Se HTML og indkommenter document.blabla, hvis udkommenteret")
 
 function nameName(name) {
     return name.name.includes("a" || "A");
