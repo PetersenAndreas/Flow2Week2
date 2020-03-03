@@ -2,9 +2,9 @@
 
 //1a
 console.log("//1a");
-let names = ["Lars", "Jan", "Peter", "Bo", "Frederik"];
+let names = ["Lars", "Jan", "Peter", "Bo", "Frederik", "Anders"];
 let namesWithA = names.filter(function(element) {
-    return element.includes("a");
+    return element.includes("a") || element.includes("A");
 })
 
 console.log(namesWithA);
@@ -43,7 +43,7 @@ function myFilter(array, callback) {
 };
 
 function filterNameWith(name) {
-    return name.includes("a" || "A");
+    return name.includes("a") || name.includes("A");
 };
 console.log(myFilter(names, filterNameWith));
 console.log();
@@ -91,7 +91,7 @@ console.log();
 
 //4c
 console.log("//4c");
-let namesAndPhone = [{ name: "Lars", phone: "1234567" }, { name: "Peter", phone: "675843" }, { name: "Jan", phone: "98547" }, { name: "Bo", phone: "79345" }];
+let namesAndPhone = [{ name: "Lars", phone: "1234567" }, { name: "Peter", phone: "675843" }, { name: "Jan", phone: "98547" }, { name: "Bo", phone: "79345" }, { name: "Anders", phone: "88888" }];
 
 function insertIntoTable(elementObj) {
     let tableHead = "<tr><th>Name</th>" + "<th>Phone</th></tr>";
@@ -123,13 +123,13 @@ En workaround er at kigge på konsollen i et browser vindue.
 //4e
 console.log("//4e - Se HTML og indkommenter document.blabla, hvis udkommenteret")
 
-function nameName(name) {
-    return name.name.includes("a" || "A");
+function findAllPhoneNameContaining(name) {
+    return name.name.includes("a") || name.name.includes("A");
 
 };
 
 function clicker() {
-    document.getElementById("myDiv1").innerHTML = insertIntoTable(myFilter(namesAndPhone, nameName))
+    document.getElementById("myDiv1").innerHTML = insertIntoTable(myFilter(namesAndPhone, findAllPhoneNameContaining))
 };
 
 function clickerRld() {
