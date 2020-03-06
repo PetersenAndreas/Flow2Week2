@@ -10,8 +10,11 @@ const jokeByIdBtn = document.getElementById("joke_by_id_btn");
 jokeByIdBtn.addEventListener('click', (event) => {
     event.preventDefault();
     const newJokeByIdText = jokes.getJokeById(getJokeByIDElement.value - 1);
-    document.getElementById("joke_id_text").innerHTML = newJokeByIdText;
-
+    if (newJokeByIdText !== undefined) {
+        document.getElementById("joke_id_text").innerHTML = newJokeByIdText;
+    } else {
+        document.getElementById("joke_id_text").innerHTML = "The only joke here, is you";
+    }
 });
 
 //Adding new Jokes
@@ -22,7 +25,6 @@ newJokeBtn.addEventListener('click', (event) => {
     jokes.addJoke(newJokeInsert.value);
     const allJokes = jokes.getJokes().map(joke => "<li>" + joke + "</li>");
     document.getElementById("jokes").innerHTML = allJokes.join("");
-
 });
 
 //2. Small application to display a quote of the hour
@@ -30,8 +32,6 @@ const getQoutOfTheHourBtn = document.getElementById("quoteBtn");
 getQoutOfTheHourBtn.addEventListener('click', (event) => {
     event.preventDefault();
     fetchFunction();
-    //console.log("result" + result);
-
 });
 
 function fetchFunction() {
