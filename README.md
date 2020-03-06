@@ -24,6 +24,6 @@ https://github.com/PetersenAndreas/Flow2Week1/tree/master/Ons-26-02-2020/REST_Pe
 
 ### Struggles
 I lost my overview, so don't expect that I know what I've done.
-This was a hard week... Many opgaver, much wow
+This was a hard week... Many opgaver, much wow <br>
 A for effort? xD
 
