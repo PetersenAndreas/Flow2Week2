@@ -25,4 +25,4 @@ https://github.com/PetersenAndreas/Flow2Week1/tree/master/Ons-26-02-2020/REST_Pe
 ### Struggles
 I lost my overview, so don't expect that I know what I've done, and what I didn't do. <br>
 This was a hard week... Many opgaver, much wow <br>
-You will in some of the projects find a so called "graveyard" this is shitty code, that I used to much time on to get to work and decided to discard and start over. If it looks like shit and smells like shit, it probaly is shit ¯\\\_(ツ)\_/¯
+You will in some of the projects find a so called "graveyard" this is shitty code, that I used to much time on to get to work and decided to discard and start over. If it looks like shit and smells like shit, it probably is shit ¯\\\_(ツ)\_/¯
