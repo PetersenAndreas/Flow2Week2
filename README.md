@@ -17,13 +17,12 @@ Nope
 - **Status for the assignment:** Didn't do it.
 
 ## Friday - 06/03-2020
-The assignment "Exam preparation exercise about AJAX, CORS and SVG" can be found under Fre-06-03-2020
+The assignment "Exam preparation exercise about AJAX, CORS and SVG" can be found under Fre-06-03-2020 <br>
 The assignment "Frontend exercise (last part of exercise from last week (skip the red part)" can be found here in the repo from last week:
 https://github.com/PetersenAndreas/Flow2Week1/tree/master/Ons-26-02-2020/REST_Persons_DTO/src/main/webapp
 - **Status for the assignment:** I made it all.
 
 ### Struggles
-I lost my overview, so don't expect that I know what I've done.
+I lost my overview, so don't expect that I know what I've done, and what I didn't do. <br>
 This was a hard week... Many opgaver, much wow <br>
-A for effort? xD
-
+You will in some of the projects find a so called "graveyard" this is shitty code, that I used to much time on to get to work and decided to discard and start over. If it looks like shit and smells like shit, it probaly is shit ¯\\\_(ツ)\_/¯
